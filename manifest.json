@@ -1,0 +1,41 @@
+{
+    "manifest_version": 2,
+    "name": "Lichess custom",
+    "version": "0.1",
+  
+    "description": "Custom the board and pieces styles of the lichess",
+    "homepage_url": "https://github.com/oTropicalista/lichess_custom",
+    "icons": {
+      "48": "ressources/logo/lichess_logo.png"
+    },
+
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.lichess.org/*"],
+        "js": [
+          "main.js",
+          "ressources/js/arrive.js",
+          "ressources/js/Boards.js",
+          "ressources/js/Pieces.js"
+        ],
+        "run_at": "document_end",
+        "all_frames": true
+      }
+    ],
+
+    "browser_action": {
+        "default_icon": "ressources/logo/lichess_logo.png",
+        "default_title": "Lichess custom",
+        "default_popup": "index.html"
+    },
+
+    "web_accessible_resources": [
+      "ressources/*"
+    ]
+  
+}

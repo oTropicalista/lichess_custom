@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lichess customize</title>
+</head>
+<body>
+    <center>
+        <h1><img src='ressources/logo/lichess_logo.png' width="300"/></h1>
+        <div style="font-size: 1.3em;font-style:italic">Lichess customize / <a href="#" class="github">Github</a></div>
+
+        <br />
+        <br />
+
+        <label for="pieces_select">Pieces:</label>
+        <select name="pieces" id="pieces_select">
+            <option value="none_pieces">Default Lichess pieces</option>
+            <option value="none_pieces">-------OPTIONS-------</option>
+            <option value="icy_sea">Icy Sea</option>
+        </select>
+        
+        <br/><br/>
+
+        <label for="board_select">Board:</label>
+        <select name="board" id="board_select">
+            <option value="none_board">Default Lichess board</option>
+            <option value="none_board">-------BOARDS-------</option>
+            <option value="blue">Blue</option>
+        </select>
+
+    </center>
+    <footer>
+        <script src='ressources/js/updateBoard.js'></script>
+        <script src='ressources/js/Boards.js'></script>
+    </footer>
+</body>
+</html>

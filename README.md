@@ -1,2 +1,2 @@
 # lichess_custom
-Custom the board and pieces styles of the lichess
+Web extension for customize the lichess board and pieces styles
